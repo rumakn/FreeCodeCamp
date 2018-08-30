@@ -1,0 +1,1 @@
+{"index.js":"function translatePigLatin(str) {\n  var reg = /^[^aeiou]+/\n\n var test = reg.test(str);\n  if(test){\n    var match = \"\" + str.match(reg);\n    return str.slice(match.length) + match + 'ay';\n  }\n\n  return str + 'way';\n\n}\n console.log(translatePigLatin(\"algorithm\"));"}

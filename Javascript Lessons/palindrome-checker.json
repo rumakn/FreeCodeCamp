@@ -1,0 +1,1 @@
+{"index.js":"function palindrome(str) {\n  // Good luck!\n\n  var arr = str.toLowerCase().replace(/[^a-zA-Z0-9]+/g,'').split('');\n  console.log(arr);\n  for(let i = 0; i < arr.length; i++){\n    if(arr[i] !== arr[arr.length-1-i]){\n      return false;\n\n    }\n  }\n\n  return true;\n}\n\npalindrome(\"A man, a plan, a canal. Panama\");"}
